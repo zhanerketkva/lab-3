@@ -7,7 +7,13 @@ public class MyArrayListStack<E> {
     public MyArrayListStack() {
         list = new MyArrayList<>();
     }
-    public void push(E element) { //push method that add element
+    public void push(E element) {
         list.add(element);
+    }
+    public E pop() {
+        if (list.isEmpty()) {
+            throw new NoSuchElementException("Stack is empty");
+        }
+        return list.remove(list.size() - 1);
     }
 }
