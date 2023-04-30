@@ -16,4 +16,10 @@ public class MyArrayListStack<E> {
         }
         return list.remove(list.size() - 1);
     }
+    public E peek() {
+        if (list.isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return list.get(list.size() - 1);
+    }
 }
