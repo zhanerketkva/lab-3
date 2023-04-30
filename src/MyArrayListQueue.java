@@ -9,4 +9,10 @@ public class MyArrayListQueue<E> {
     public void enqueue(E element) {
         list.add(element);
     }
+    public E dequeue() {
+        if (list.isEmpty()) {
+            throw new NoSuchElementException("Queue is empty");
+        }
+        return list.remove(0);
+    }
 }
