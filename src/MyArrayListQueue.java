@@ -9,12 +9,14 @@ public class MyArrayListQueue<E> {
     public void enqueue(E element) {
         list.add(element);
     }
+    /**add an element to the back of the queue**/
     public E dequeue() {
         if (list.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         }
         return list.remove(0);
     }
+    /**remove and return the front element of the queue**/
     public E peek() {
         if (list.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
