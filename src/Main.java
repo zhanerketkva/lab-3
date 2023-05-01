@@ -4,5 +4,12 @@ public class main {
     public static void main(String[] args) {
         MyArrayListQueue<String> queue = new MyArrayListQueue<>();
         MyArrayListStack<Integer> stack = new MyArrayListStack<>();
+        queue.enqueue("flower");
+        queue.enqueue("dog");
+        queue.enqueue("cat");
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(20);
     }
 }
