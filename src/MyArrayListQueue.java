@@ -23,9 +23,11 @@ public class MyArrayListQueue<E> {
         }
         return list.get(0);
     }
+    /**return the front element of the queue without removing it**/
     public boolean isEmpty() {
         return list.isEmpty();
     }
+    /** define whether the queue is empty**/
     public int size() {
         return list.size();
     }
