@@ -14,6 +14,17 @@ public class main {
 
         System.out.println("Size of the queue: " + queue.size());
         System.out.println("Front element of the queue: " + queue.peek());
+        System.out.println("Size of the stack: " + stack.size());
+        System.out.println("Front element of the stack: " + stack.peek());
+        while (!queue.isEmpty()) {
+            System.out.println("Dequeued: " + queue.dequeue());
+        }
+        try {
+            queue.dequeue();
+        } catch (NoSuchElementException e) {
+            System.out.println("Caught exception: " + e.getMessage());
+        }
+        System.out.println("Stack is empty: " + stack.isEmpty());
 
     }
 }
