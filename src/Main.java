@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         MyArrayListQueue<String> queue = new MyArrayListQueue<>();
         MyArrayListStack<Integer> stack = new MyArrayListStack<>();
@@ -25,6 +25,9 @@ public class main {
             System.out.println("Caught exception: " + e.getMessage());
         }
         System.out.println("Stack is empty: " + stack.isEmpty());
+        System.out.println("Popped element of stack: " + stack.pop());
+        System.out.println("Popped element of stack: " + stack.pop());
+        System.out.println("Popped element of stack: " + stack.pop());
 
     }
 }
