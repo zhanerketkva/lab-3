@@ -42,11 +42,42 @@ The size method in a queue data structure is used to retrieve the number of elem
 # MyArrayListStack
 # Push
 The push() method is used to add an element to the top of the stack.
+```
+public void push(E element) {
+        list.add(element);
+    }
+```
 # Pop
 The pop() method is used to remove and return the element at the top of the stack.
+```
+ public E pop() {
+        if (list.isEmpty()) {
+            throw new NoSuchElementException("Stack is empty");
+        }
+        return list.remove(list.size() - 1);
+    }
+```
 # Peek
 The peek() method is used to retrieve, but not remove, the element at the top of the stack.
+```
+public E peek() {
+        if (list.isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return list.get(list.size() - 1);
+    }
+ ```
 # isEmpty
 The isEmpty() method is used to check whether the stack is empty or not. It returns true if the stack is empty, and false otherwise.
+ ```
+ public boolean isEmpty() {
+        return list.isEmpty();
+    }
+  ```
 # Size
 The isEmpty() method is used to check whether the stack is empty or not. It returns true if the stack is empty, and false otherwise.
+```
+public int size() {
+        return list.size();
+    }
+ ```
