@@ -11,5 +11,9 @@ public class main {
         stack.push(10);
         stack.push(20);
         stack.push(20);
+
+        System.out.println("Size of the queue: " + queue.size());
+        System.out.println("Front element of the queue: " + queue.peek());
+
     }
 }
