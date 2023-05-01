@@ -2,36 +2,42 @@
 # MyArrayListQueue
 # Enquequ
 The enqueue method in a queue data structure is used to add an element to the end of the queue. 
+```
 public void enqueue(E element) {
         list.add(element);
     }
+ ```
 # Dequeue
 The dequeue method in a queue data structure is used to remove and return the element at the front of the queue.
+```
 public E dequeue() {
         if (list.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         }
         return list.remove(0);
     }
+ ```
 # Peek
 The peek method in a queue data structure is used to retrieve the element at the front of the queue without removing it.
- public E peek() {
+ ```public E peek() {
         if (list.isEmpty()) {
             throw new NoSuchElementException("Queue is empty");
         }
         return list.get(0);
     }
+ ```
 # isEmpty
 The isEmpty method in a queue data structure is used to check if the queue is empty or not.
-public boolean isEmpty() {
+```public boolean isEmpty() {
         return list.isEmpty();
     }
+ ```
 # Size
 The size method in a queue data structure is used to retrieve the number of elements currently stored in the queue.
-public int size() {
+```public int size() {
         return list.size();
     }
-
+```
 
 # MyArrayListStack
 # Push
