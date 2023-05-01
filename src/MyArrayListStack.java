@@ -1,4 +1,4 @@
-import java.util.EmptyStackException; //necessary exception
+import java.util.EmptyStackException;
 import java.util.NoSuchElementException;
 
 public class MyArrayListStack<E> {

@@ -13,9 +13,13 @@ public class Main {
         stack.push(20);
 
         System.out.println("Size of the queue: " + queue.size());
+        /**Print the size of the queue **/
         System.out.println("Front element of the queue: " + queue.peek());
+        /** Peek into the front element of the queue**/
         System.out.println("Size of the stack: " + stack.size());
+        /**Print the size of the stack**/
         System.out.println("Front element of the stack: " + stack.peek());
+        /**Peek into the front element of the stack **/
         while (!queue.isEmpty()) {
             System.out.println("Dequeued: " + queue.dequeue());
         }
@@ -25,7 +29,9 @@ public class Main {
             System.out.println("Caught exception: " + e.getMessage());
         }
         System.out.println("Stack is empty: " + stack.isEmpty());
+        /** Print isEmpty method**/
         System.out.println("Popped element of stack: " + stack.pop());
+        /**Print pop method**/
         System.out.println("Popped element of stack: " + stack.pop());
         System.out.println("Popped element of stack: " + stack.pop());
 
